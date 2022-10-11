@@ -4,6 +4,7 @@ using UnityEngine;
 using GameDevTV.Utils;
 using Course.SceneManagement;
 using System;
+using TMPro;
 
 namespace Course.UI
 {
@@ -11,6 +12,8 @@ namespace Course.UI
     public class MainMenuUi : MonoBehaviour
     {
          LazyValue<SavingWrapper> savingWrapper;
+
+         [SerializeField] TMP_InputField newGameNameField;
 
          private void Awake() 
          {
@@ -25,6 +28,17 @@ namespace Course.UI
         public void ContinueGame()
         {
             savingWrapper.value.ContinueGame();
+        }
+
+        public void NewGame()
+        {
+            savingWrapper.value.NewGame(newGameNameField.text);
+        }
+
+        public void QuitGame()
+        {
+            Application.Quit();
+            print("quit");
         }
     }
 }

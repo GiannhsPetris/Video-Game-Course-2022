@@ -15,7 +15,7 @@ namespace Course.Attributes
         [SerializeField] float regenerationPercentage = 70;
         [SerializeField] TakeDamageEvent takeDamage;
 
-        [SerializeField] UnityEvent onDie;
+        public UnityEvent onDie;
 
         [System.Serializable]
         public class TakeDamageEvent : UnityEvent<float>
@@ -26,7 +26,7 @@ namespace Course.Attributes
 
 
         LazyValue<float> healthPoints;
-        bool isDead = false;
+        bool wasDeadLastFrame = false;
 
 
         private void Awake() 
@@ -42,6 +42,7 @@ namespace Course.Attributes
         internal void Heal(float healthToRestore)
         {
             healthPoints.value = Mathf.Min(healthPoints.value + healthToRestore, GetMaxHealthPoints());
+            UpdateState();
         }
 
         private void Start() 
@@ -62,7 +63,7 @@ namespace Course.Attributes
       
         public bool IsDead()
         {
-            return isDead;
+            return healthPoints.value <= 0;
         }
 
 
@@ -70,13 +71,14 @@ namespace Course.Attributes
         {
             healthPoints.value = Mathf.Max(healthPoints.value - damage, 0);
 
-            if (healthPoints.value == 0)
+            if (IsDead())
             {
                 onDie.Invoke();
-                Die();
                 AwardExperience(instigator);
             }
             else takeDamage.Invoke(damage);
+
+            UpdateState();
         }
 
         public float GetHealthPoints(){
@@ -111,13 +113,20 @@ namespace Course.Attributes
             return healthPoints.value / GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
-        private void Die()
+        private void UpdateState()
         {
-            if (isDead) return;
+            if(!wasDeadLastFrame && IsDead())
+            {
+                GetComponent<Animator>().SetTrigger("die");
+                GetComponent<ActionScheduler>().CancelCurrentAction();
+            }
+            
+            if (wasDeadLastFrame && !IsDead())
+            {
+                GetComponent<Animator>().Rebind();
+            }
 
-            isDead = true;
-            GetComponent<Animator>().SetTrigger("die");
-            GetComponent<ActionScheduler>().CancelCurrentAction();
+            wasDeadLastFrame = IsDead();
         }
 
         public object CaptureState()
@@ -127,12 +136,9 @@ namespace Course.Attributes
 
         public void RestoreState(object state)
         {
-           healthPoints.value = (float)state;
+            healthPoints.value = (float)state;
 
-            if (healthPoints.value == 0)
-            {
-                Die();
-            }
+            UpdateState();
         }
 
     }
