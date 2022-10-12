@@ -1,43 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using Course.Core;
 using Course.Control;
+using Course.SceneManagement;
 
-namespace course.Cinematics
+namespace Course.Cinematics
 {
     public class CinematicsControlRemover : MonoBehaviour
     {
+        GameObject core;
         GameObject player;
 
-        private void Awake() 
-        {
-            GameObject player = GameObject.FindWithTag("Player");
-        }
-
-        private void OnEnable() 
+        private void Start()
         {
             GetComponent<PlayableDirector>().played += DisableControl;
-            GetComponent<PlayableDirector>().stopped += DisableControl;
+            GetComponent<PlayableDirector>().stopped += EnableControl;
+            player = GameObject.FindWithTag("Player");
         }
 
-        private void OnDisable() 
-        {
-            GetComponent<PlayableDirector>().played -= DisableControl;
-            GetComponent<PlayableDirector>().stopped -= DisableControl;
-        }
-
-         
         void DisableControl(PlayableDirector pd)
         {
             player.GetComponent<ActionScheduler>().CancelCurrentAction();
             player.GetComponent<PlayerController>().enabled = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            //print("enter");
+            //player.GetComponent<Fighter>().enabled = false;
+            //player.SetActive(false);
         }
 
         void EnableControl(PlayableDirector pd)
         {
             player.GetComponent<PlayerController>().enabled = true;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Fader fader = FindObjectOfType<Fader>();
+            fader.FadeOutImmediate();
+            fader.FadeIn(0.5f);
+            //player.GetComponent<Fighter>().enabled = true;
+            //player.SetActive(true);
         }
     }
 }

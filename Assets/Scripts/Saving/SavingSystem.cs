@@ -40,7 +40,7 @@ namespace Course.Saving
             File.Delete(GetPathFromSaveFile(saveFile));
         }
 
-        public IEnumerable<string> Listsaves()
+        public IEnumerable<string> ListSaves()
         {
             foreach (string path in Directory.EnumerateFiles(Application.persistentDataPath))
             {

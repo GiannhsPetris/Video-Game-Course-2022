@@ -22,7 +22,7 @@ namespace Course.UI
             SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
 
             if (savingWrapper == null) return;
-            foreach (string save in savingWrapper.Listsaves())
+            foreach (string save in savingWrapper.ListSaves())
             {
                 GameObject buttonInstance = Instantiate(buttonPrefab, contentRoot);  
                 TMP_Text textComponent = buttonInstance.GetComponentInChildren<TMP_Text>();

@@ -5,6 +5,9 @@ namespace Course.Stats
         Player,
         Grunt,
         Mage,
-        Archer
+        Archer,
+        Shaman,
+        Soldier,
+        Warchief
     }
 }

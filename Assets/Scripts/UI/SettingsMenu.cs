@@ -18,6 +18,6 @@ namespace Course.UI
         public void SetQuality(int index)
         {
             QualitySettings.SetQualityLevel(index);
-        }
+        }  
     }
 }

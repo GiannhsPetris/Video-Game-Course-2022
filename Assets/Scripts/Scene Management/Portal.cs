@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using Course.Control;
+using Course.Saving;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -10,23 +10,20 @@ namespace Course.SceneManagement
 {
     public class Portal : MonoBehaviour
     {
-
-        enum DestinationIdentifier 
+        enum DestinationIdentifier
         {
             A, B, C, D, E
         }
 
-
         [SerializeField] int sceneToLoad = -1;
         [SerializeField] Transform spawnPoint;
         [SerializeField] DestinationIdentifier destination;
-        [SerializeField] float fadeOutTime = 0.5f;
+        [SerializeField] float fadeOutTime = 1f;
         [SerializeField] float fadeInTime = 1f;
         [SerializeField] float fadeWaitTime = 0.5f;
 
-
-
-        private void OnTriggerEnter(Collider other) {
+        private void OnTriggerEnter(Collider other)
+        {
             if (other.tag == "Player")
             {
                 StartCoroutine(Transition());
@@ -37,33 +34,37 @@ namespace Course.SceneManagement
         {
             if (sceneToLoad < 0)
             {
-                Debug.LogError("Scene to load not set");
+                Debug.LogError("Scene to load not set.");
                 yield break;
-            } 
+            }
 
             DontDestroyOnLoad(gameObject);
 
             Fader fader = FindObjectOfType<Fader>();
-            SavingWrapper wrapper = FindObjectOfType<SavingWrapper>();
+            SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
             PlayerController playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
             playerController.enabled = false;
 
-
             yield return fader.FadeOut(fadeOutTime);
 
+            savingWrapper.Save();
             
-            wrapper.Save();
 
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
+            //print("save1");
+            
             PlayerController newPlayerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
             newPlayerController.enabled = false;
 
-            wrapper.Load(); 
             
+            savingWrapper.Load();
+            //print("load");
+
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
 
-            wrapper.Save();
+            savingWrapper.Save();
+            //print("save2");
 
             yield return new WaitForSeconds(fadeWaitTime);
             fader.FadeIn(fadeInTime);
@@ -94,5 +95,4 @@ namespace Course.SceneManagement
             return null;
         }
     }
-
 }

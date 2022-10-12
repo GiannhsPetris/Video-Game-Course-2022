@@ -1,17 +1,15 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Course.SceneManagement
 {
     public class Fader : MonoBehaviour
     {
-
         CanvasGroup canvasGroup;
         Coroutine currentActiveFade = null;
 
-        private void Awake() {
+        private void Awake()
+        {
             canvasGroup = GetComponent<CanvasGroup>();
         }
 
@@ -20,14 +18,14 @@ namespace Course.SceneManagement
             canvasGroup.alpha = 1;
         }
 
-
-        private IEnumerator FadeRoutine(float target, float time)
+        public Coroutine FadeOut(float time)
         {
-            while (!Mathf.Approximately(canvasGroup.alpha, target))
-            {
-                canvasGroup.alpha = Mathf.MoveTowards(canvasGroup.alpha, target, Time.unscaledDeltaTime / time);
-                yield return null;
-            }
+            return Fade(1, time);
+        }
+
+        public Coroutine FadeIn(float time)
+        {
+            return Fade(0, time);
         }
 
         public Coroutine Fade(float target, float time)
@@ -36,21 +34,17 @@ namespace Course.SceneManagement
             {
                 StopCoroutine(currentActiveFade);
             }
-
             currentActiveFade = StartCoroutine(FadeRoutine(target, time));
             return currentActiveFade;
         }
 
-
-        public Coroutine FadeOut(float time) 
+        private IEnumerator FadeRoutine(float target, float time)
         {
-           return Fade(1, time);
-        }
-
-
-        public Coroutine FadeIn(float time)
-        {
-           return Fade(0, time);
+            while (!Mathf.Approximately(canvasGroup.alpha, target))
+            {
+                canvasGroup.alpha = Mathf.MoveTowards(canvasGroup.alpha, target, Time.unscaledDeltaTime / time);
+                yield return null;
+            }
         }
     }
 }
