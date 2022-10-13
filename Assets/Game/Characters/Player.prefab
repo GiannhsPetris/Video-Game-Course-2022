@@ -95,6 +95,10 @@ PrefabInstance:
       propertyPath: cursorMappings.Array.data[4].texture
       value: 
       objectReference: {fileID: 2800000, guid: 2b561569485d156429a42f8b103c2037, type: 3}
+    - target: {fileID: 1953515882964205798, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7fac98e0d5906a84da5849f1f1619c44, type: 3}
     - target: {fileID: 2115482034563853605, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -151,6 +155,10 @@ PrefabInstance:
       propertyPath: levelUpParticleEffect
       value: 
       objectReference: {fileID: 7750532762869572838, guid: 796d39dd63a60084499739334b7d6fb8, type: 3}
+    - target: {fileID: 4559109617289627270, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3298d4d468badd044b2ca8930315e21d, type: 3}
     - target: {fileID: 4578248276805378862, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -305,6 +313,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9331f38e1e063d46a71a6adc1a071fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawnLocation: {fileID: 0}
+  respawnDelay: 3
+  fadeTime: 3
+  healthRegenPercentage: 30
+  enemyHealthRegenPercentage: 30
 --- !u!1001 &2489121941655031305
 PrefabInstance:
   m_ObjectHideFlags: 0

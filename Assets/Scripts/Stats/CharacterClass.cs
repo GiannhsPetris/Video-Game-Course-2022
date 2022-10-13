@@ -8,6 +8,7 @@ namespace Course.Stats
         Archer,
         Shaman,
         Soldier,
-        Warchief
+        Warchief,
+        Peasant
     }
 }

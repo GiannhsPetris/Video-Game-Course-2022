@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1416323399747843694, guid: 07cdd9ab0e798a24b9e23a47dc97c950, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 85c9a85bc0e2cf74d8bc514b2747db98, type: 3}
     - target: {fileID: 3399204777146308926, guid: 07cdd9ab0e798a24b9e23a47dc97c950, type: 3}
       propertyPath: m_Name
       value: Ghost
@@ -55,6 +59,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4034861267859337230, guid: 07cdd9ab0e798a24b9e23a47dc97c950, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c54c644b72aed646b07ab9728400316, type: 3}
     - target: {fileID: 6350956307217178460, guid: 07cdd9ab0e798a24b9e23a47dc97c950, type: 3}
       propertyPath: m_IsActive
       value: 0
