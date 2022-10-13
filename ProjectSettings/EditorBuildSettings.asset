@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/forest.unity
     guid: bf9656902be965d40b11503311820b39
+  - enabled: 1
+    path: Assets/Goblin_Cave_Arena_all/Goblin_Cave_Arena.unity
+    guid: 175354aaeecd66b499747e2693f50ef9
   m_configObjects: {}
