@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Peasants
       objectReference: {fileID: 0}
+    - target: {fileID: 2852999872066138038, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4578248276805378862, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -75,7 +79,18 @@ PrefabInstance:
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: c9a34c70f1c0d00409f41fcfbb2a6871, type: 3}
-    m_RemovedComponents: []
+    - target: {fileID: 7931398210869053097, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4c94f5ce13dcde248836a9125b92b95e, type: 2}
+    m_RemovedComponents:
+    - {fileID: 1907069367758778997, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
+    - {fileID: 2115482034563853605, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
+    - {fileID: 3285262657128706670, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
+    - {fileID: 6523983633229457533, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
+    - {fileID: 1322836344398571714, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
+    - {fileID: 2493223506091224005, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
+    - {fileID: 4257022055052501010, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecfbd20c2a0feed47976faa5a3e39034, type: 3}
 --- !u!4 &3093857860103652664 stripped
 Transform:
