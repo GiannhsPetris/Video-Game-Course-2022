@@ -3414,6 +3414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 34711734}
+  pauseCanvas: {fileID: 668867283}
   textField: {fileID: 34711735}
   dialogues:
   - 'After a long and exhausting search in the woods '
@@ -8518,6 +8519,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 473574, guid: 3c7e3093f2f74ad499210774e0d01aea, type: 3}
   m_PrefabInstance: {fileID: 665015122}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &668867283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7893390609664619353, guid: ee29a45def395fb4c9a6a024465102d6, type: 3}
+  m_PrefabInstance: {fileID: 34711729}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &677254644
 PrefabInstance:
@@ -18874,6 +18880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 34711734}
+  pauseCanvas: {fileID: 668867283}
   textField: {fileID: 34711735}
   dialogues:
   - 'An Ancient Shrine '
