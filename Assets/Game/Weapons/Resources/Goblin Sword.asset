@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Goblin Sword
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 22100000, guid: 29fcc915852ab4148a504e56cf6aaa48, type: 2}
-  equippedPrefab: {fileID: 6555024285470322383, guid: c61f94976484a0448ad763b42fc1e830, type: 3}
+  equippedPrefab: {fileID: 7176401351625699030, guid: 8754668351165ea46b60bd8f609c7953, type: 3}
   weaponDamage: 10
-  weaponPercentageBonus: 0
+  weaponPercentageBonus: 15
   weaponRange: 2
   isRightHanded: 1
   projectile: {fileID: 0}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Course.WeightedRandom;
+using Course.Attributes;
 
 namespace Course.Combat
 {
@@ -10,47 +11,12 @@ namespace Course.Combat
 
         WeightedRandomizer weightedRandomizer;
 
-        [Header("Lists")]
         [SerializeField] private List<Transform> spawnPointList = new List<Transform>() { };
-
-       
-
-
-        [Header("Stats")]
-        [SerializeField] private int currentMax = 5;
-        [SerializeField] private int leftToSpawn;
-
-        [SerializeField] private float timeToSpawn = 15;
-        [SerializeField] private float currentTime = 0;
 
 
         int currentAlive;
         int spawnCounter;
 
-
-        //Enemy enemy;
-
-
-        // private void Update() 
-        // {
-        //     if (currentTime > 0)
-        //     {
-        //         currentTime -= Time.deltaTime;
-        //     }
-        //     else
-        //     {
-        //         CheckSpawn(goalList, spawnPointList);
-        //         currentTime = timeToSpawn;
-        //     }
-        // }
-
-
-        // public void CheckSpawn(List<Transform> goalList, List<Transform> spawnPointList, List<WeightedValue> weightedValues)
-        // {
-        //     leftToSpawn = currentMax - currentAlive;
-        //     if (leftToSpawn > 0) StartCoroutine(Spawn(leftToSpawn, spawnPointList, weightedValues));
-
-        // }
 
         public void SpawnStart(int maxEnemies, List<WeightedValue> weightedValues)
         {
@@ -62,7 +28,7 @@ namespace Course.Combat
         {
             spawnCounter = 0;
 
-            WaitForSeconds wait = new WaitForSeconds(1.5f);
+            WaitForSeconds wait = new WaitForSeconds(3.5f);
 
             while (spawnCounter < maxEnemies)
             {
@@ -70,17 +36,14 @@ namespace Course.Combat
                 GameObject enemy = weightedRandomizer.GetRandomValue(weightedValues);
 
                 GameObject clone = GameObject.Instantiate(enemy, spawnPointList[spawnIndex]);
-                //currentAlive++;
+
+                //clone.GetComponents<Health>().
+
                 spawnCounter++;
 
                 yield return wait;
             }
         }
-
-        // public void DeathOccured()
-        // {
-        //     currentAlive--;
-        // }
     }
 
 }

@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1345246978425924154, guid: bce1933847804804f9b1e9c88d8d94b5, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2424366970502858395, guid: bce1933847804804f9b1e9c88d8d94b5, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key0.a
       value: 0.6901961

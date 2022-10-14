@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Course.Combat;
+using Course.SceneManagement;
 
 namespace Course.Cinematics
 {
@@ -34,6 +35,13 @@ namespace Course.Cinematics
             if (index > dialogues.Length) return;
             textField.text = dialogues[index];
             index ++;
+        }
+
+        public void Quit()
+        {
+            SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
+            if (savingWrapper != null) print("good");
+            savingWrapper.LoadMenu();
         }
 
         // public void FirstWaveEvent()

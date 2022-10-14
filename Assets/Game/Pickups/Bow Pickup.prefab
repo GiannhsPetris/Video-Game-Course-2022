@@ -71,7 +71,7 @@ PrefabInstance:
     - target: {fileID: 4080570825513603351, guid: 3070ffa4faa6a03458ed242f19bf7717, type: 3}
       propertyPath: weapon
       value: 
-      objectReference: {fileID: 11400000, guid: cd1929f6eee4ab144819d1a3e10b8664, type: 2}
+      objectReference: {fileID: 11400000, guid: 026e9e4efa20f6b4a99cdf9b5b75a3a4, type: 2}
     - target: {fileID: 4696139253563194784, guid: 3070ffa4faa6a03458ed242f19bf7717, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -115,6 +115,10 @@ PrefabInstance:
     - target: {fileID: 4696139253563194784, guid: 3070ffa4faa6a03458ed242f19bf7717, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833219310505037626, guid: 3070ffa4faa6a03458ed242f19bf7717, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3070ffa4faa6a03458ed242f19bf7717, type: 3}

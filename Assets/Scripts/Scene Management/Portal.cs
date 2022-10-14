@@ -48,23 +48,23 @@ namespace Course.SceneManagement
             yield return fader.FadeOut(fadeOutTime);
 
             savingWrapper.Save();
-            
+            print("save1");
 
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
-            //print("save1");
+            
             
             PlayerController newPlayerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
             newPlayerController.enabled = false;
 
             
             savingWrapper.Load();
-            //print("load");
+            print("load");
 
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
 
             savingWrapper.Save();
-            //print("save2");
+            print("save2");
 
             yield return new WaitForSeconds(fadeWaitTime);
             fader.FadeIn(fadeInTime);

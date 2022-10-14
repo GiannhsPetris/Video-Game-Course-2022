@@ -16,8 +16,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4080570825513603351, guid: 3070ffa4faa6a03458ed242f19bf7717, type: 3}
+      propertyPath: respawnTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080570825513603351, guid: 3070ffa4faa6a03458ed242f19bf7717, type: 3}
       propertyPath: healthToRestore
-      value: 50
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4696139253563194784, guid: 3070ffa4faa6a03458ed242f19bf7717, type: 3}
       propertyPath: m_RootOrder

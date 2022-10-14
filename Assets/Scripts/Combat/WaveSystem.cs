@@ -27,14 +27,17 @@ namespace Course.Combat
         [SerializeField] int wave3Length;
 
 
-        int totalLeft = 0;
+        private int totalLeft = 0;
         bool wave2Started, wave3Started, end;
         SpawnSystem spawnSystem;
-
+        private int killcounter;
 
         private void Start()
         {
+            killcounter =0;
+
             totalLeft = wave1Length + wave2Length + wave3Length;
+            //print(totalLeft.ToString());
 
             //totalLeft = enemies1.Count + enemies2.Count + enemies3.Count;
 
@@ -45,60 +48,65 @@ namespace Course.Combat
             spawnSystem = GetComponent<SpawnSystem>();
             //cutscene 1st wave
             //spawn enemies
-            if(spawnSystem != null) FirstWave();
+            //if(spawnSystem != null) FirstWave();
            
         }
 
-        // private void Update()
-        // {
-        //    if (totalLeft == wave2Length + wave3Length && !wave2Started)
-        //    {
-        //         wave2Started = true;
-        //         //spawn pickups
-        //         SpawnItems(pickups);
-        //         //play empty cutscene for 10s
-        //         playableDirectorEmpty.Play();
-        //         //then spawn enemies
+        private void Update()
+        {
+            //print(totalLeft.ToString());
+            //print(killcounter.ToString());
+           if (totalLeft == wave2Length + wave3Length && !wave2Started)
+           {
+                wave2Started = true;
+                //spawn pickups
+                SpawnItems(pickups);
+                //play empty cutscene for 10s
+                playableDirectorEmpty.Play();
+                //then spawn enemies
 
-        //    }
-        //    else if (totalLeft == wave3Length && !wave3Started)
-        //    {
-        //         wave3Started = true;
-        //         //spawn pickups
-        //         SpawnItems(pickups2);
-        //         //play empty cutscene for 10s
-        //         playableDirectorBoss.Play();
-        //         //play boss cutscene
-        //         //then spawn enemies
-        //     }
-        //    else if (totalLeft == 0 && !end)
-        //    {
-        //         end = true;
-        //         //play ending cutscene 
-        //         playableDirectorEnd.Play();
-        //         //go to menu
-        //    }
-        // }
+           }
+           else if (totalLeft == wave3Length && !wave3Started)
+           {
+                wave3Started = true;
+                // //spawn pickups
+                SpawnItems(pickups2);
+                // //play empty cutscene for 10s
+                playableDirectorBoss.Play();
+                // //play boss cutscene
+                // //then spawn enemies
+            }
+           else if (totalLeft == 0 && !end)
+           {
+                end = true;
+                // //play ending cutscene 
+                playableDirectorEnd.Play();
+                // //go to menu
+           }
+        }
 
         //called by first cutscene
         public void FirstWave()
         {
             spawnSystem.SpawnStart(wave1Length, enemies1);
+            print(1);
         }
 
 
         //called by empty
         public void SecondWave()
         {
-            //StartCoroutine(spawnSystem.Spawn(wave2Length, enemies2));
+            print(2);
+            spawnSystem.SpawnStart(wave2Length, enemies2);
         }
 
         //called by boss
         public void Finalwave()
         {
-           boss.SetActive(true);
-
-           //StartCoroutine(spawnSystem.Spawn(wave3Length, enemies3));
+            totalLeft ++;
+            boss.SetActive(true);
+            print(3);
+            spawnSystem.SpawnStart(wave3Length, enemies3);
         }
 
         public void SpawnItems(GameObject[] pickups)
@@ -112,7 +120,10 @@ namespace Course.Combat
 
         public void EnemyKilled()
         {
-           totalLeft --;
+            totalLeft = totalLeft - 1;
+            print(totalLeft.ToString());
+           // killcounter ++;
+            //print(killcounter.ToString());
         }
     }
 }

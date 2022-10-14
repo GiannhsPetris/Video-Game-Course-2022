@@ -7,11 +7,14 @@ using Course.Core;
 using System;
 using GameDevTV.Utils;
 using UnityEngine.Events;
+using Course.Combat;
 
 namespace Course.Attributes
 {
     public class Health : MonoBehaviour, ISaveable
     {
+        WaveSystem waveSystem = null;
+
         [SerializeField] float regenerationPercentage = 70;
         [SerializeField] TakeDamageEvent takeDamage;
 
@@ -48,6 +51,7 @@ namespace Course.Attributes
         private void Start() 
         {
             healthPoints.ForceInit();
+            waveSystem = FindObjectOfType<WaveSystem>();
         }
 
         private void OnEnable() 
@@ -75,6 +79,8 @@ namespace Course.Attributes
             {
                 onDie.Invoke();
                 AwardExperience(instigator);
+
+                if (waveSystem != null && instigator.name == "Player") waveSystem.EnemyKilled();
             }
             else takeDamage.Invoke(damage);
 
