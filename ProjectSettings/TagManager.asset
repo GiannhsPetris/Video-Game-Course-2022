@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - terrain
+  - Wave1
+  - Wave2
   layers:
   - Default
   - TransparentFX
@@ -13,7 +15,7 @@ TagManager:
   - Water
   - UI
   - Post Pro
-  - 
+  - wave2
   - 
   - 
   - 

@@ -38,6 +38,12 @@ namespace Course.UI
             savingWrapper.Save();
         }
 
+        public void Quit()
+        {
+            SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
+            savingWrapper.LoadMenu();
+        }
+
         public void SaveAndQuit()
         {
             SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();

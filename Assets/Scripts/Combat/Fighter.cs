@@ -10,7 +10,7 @@ using System;
 
 namespace Course.Combat
 {
-    public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
+public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
     {
         [SerializeField] float timeBetweenAttacks = 1f;
         [SerializeField] Transform rightHandTransform = null;
@@ -119,14 +119,17 @@ namespace Course.Combat
 
         private bool GetIsInRange(Transform targetTransform)
         {
-            if (targetTransform == null) return false;
-            return Vector3.Distance(transform.position, target.transform.position) < currentWeaponConfig.GetRange();
+            return Vector3.Distance(transform.position, targetTransform.position) < currentWeaponConfig.GetRange();
         }
 
         public bool CanAttack(GameObject combatTarget)
         {
             if (combatTarget == null) { return false; }
-            if (!GetComponent<Mover>().CanMoveTo(combatTarget.transform.position) && !GetIsInRange(combatTarget.transform)) return false;
+            if (!GetComponent<Mover>().CanMoveTo(combatTarget.transform.position) &&
+                !GetIsInRange(combatTarget.transform))
+            {
+                return false;
+            }
             Health targetToTest = combatTarget.GetComponent<Health>();
             return targetToTest != null && !targetToTest.IsDead();
         }

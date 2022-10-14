@@ -861,6 +861,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2900782050564333013, guid: ee29a45def395fb4c9a6a024465102d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265857593189991285, guid: ee29a45def395fb4c9a6a024465102d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3636785585861616333, guid: ee29a45def395fb4c9a6a024465102d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 61.61
@@ -3412,6 +3420,7 @@ MonoBehaviour:
   - You found A goblin camp and decide to investigate
   - 'the place is ought to be swarming with goblins '
   - But you must find the lost shipment
+  waveSystem: {fileID: 0}
 --- !u!320 &257026551
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -18870,6 +18879,7 @@ MonoBehaviour:
   - 'An Ancient Shrine '
   - There could be some treasure there
   - It seems guarded. I must be carefull
+  waveSystem: {fileID: 0}
 --- !u!320 &1671917848
 PlayableDirector:
   m_ObjectHideFlags: 0
