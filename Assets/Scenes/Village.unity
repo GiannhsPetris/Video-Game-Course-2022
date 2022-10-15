@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 608a54362d018714eb177d667fa68ad6, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 47cf619676c954c4e883720013d3f18c, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -28781,8 +28781,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1076769264668162614, guid: ee29a45def395fb4c9a6a024465102d6, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 85.275635
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076769264668162614, guid: ee29a45def395fb4c9a6a024465102d6, type: 3}
       propertyPath: m_BoundingSphereOverride.x
       value: 4.5904e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076769264668162614, guid: ee29a45def395fb4c9a6a024465102d6, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1076769264668162615, guid: ee29a45def395fb4c9a6a024465102d6, type: 3}
       propertyPath: m_LocalRotation.w
