@@ -1074,6 +1074,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6203850356687351830, guid: ee29a45def395fb4c9a6a024465102d6, type: 3}
   m_PrefabInstance: {fileID: 34711729}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &34711737 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3636785585861616333, guid: ee29a45def395fb4c9a6a024465102d6, type: 3}
+  m_PrefabInstance: {fileID: 34711729}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &38246075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1612,7 +1617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8717488907012092039, guid: 63aee09d072f44444b93be16cd10691d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.915841
+      value: 20.196089
       objectReference: {fileID: 0}
     - target: {fileID: 8717488907012092039, guid: 63aee09d072f44444b93be16cd10691d, type: 3}
       propertyPath: m_LocalScale.y
@@ -1624,7 +1629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8717488907012092039, guid: 63aee09d072f44444b93be16cd10691d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.28
+      value: 54.33
       objectReference: {fileID: 0}
     - target: {fileID: 8717488907012092039, guid: 63aee09d072f44444b93be16cd10691d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1632,7 +1637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8717488907012092039, guid: 63aee09d072f44444b93be16cd10691d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 121.53
+      value: 120.41
       objectReference: {fileID: 0}
     - target: {fileID: 8717488907012092039, guid: 63aee09d072f44444b93be16cd10691d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3430,10 +3435,9 @@ MonoBehaviour:
   textField: {fileID: 34711735}
   dialogues:
   - 'After a long and exhausting search in the woods '
-  - You found A goblin camp and decide to investigate
-  - 'the place is ought to be swarming with goblins '
+  - You found a goblin camp and decide to investigate
+  - 'The place  must  be swarming with goblins '
   - But you must find the lost shipment
-  waveSystem: {fileID: 0}
 --- !u!320 &257026551
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -10943,6 +10947,14 @@ PrefabInstance:
       propertyPath: chaseDistance
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 8919837469096389031, guid: 4cbe1876457dc9c49b50a736a6ff5905, type: 3}
+      propertyPath: startingLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8919837469096389031, guid: 4cbe1876457dc9c49b50a736a6ff5905, type: 3}
+      propertyPath: characterClass
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9174799354313747099, guid: 4cbe1876457dc9c49b50a736a6ff5905, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -13249,6 +13261,133 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8826354705480527198, guid: 2fd98d6864e84db40a330531d4976123, type: 3}
   m_PrefabInstance: {fileID: 1093858910}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1100963943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1100963945}
+  - component: {fileID: 1100963944}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1100963944
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100963943}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 48a26d2460d0cfe438226eb7f2254836, type: 2}
+  m_audioClip: {fileID: 8300000, guid: ca4c15f0e51ef464cbe6173778ad03f8, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 143
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.372
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1100963945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100963943}
+  m_LocalRotation: {x: -0, y: 0.019581094, z: -0, w: 0.9998083}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 34711737}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1117247819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18894,6 +19033,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 212984008}
     m_Modifications:
+    - target: {fileID: 165882, guid: fa135787d5e018a4d854fa0c95ae06cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 431270, guid: fa135787d5e018a4d854fa0c95ae06cb, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -19427,7 +19570,6 @@ MonoBehaviour:
   - 'An Ancient Shrine '
   - There could be some treasure there
   - It seems guarded. I must be carefull
-  waveSystem: {fileID: 0}
 --- !u!320 &1671917848
 PlayableDirector:
   m_ObjectHideFlags: 0

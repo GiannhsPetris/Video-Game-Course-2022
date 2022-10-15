@@ -27,14 +27,14 @@ namespace Course.Combat
         [SerializeField] int wave3Length;
 
 
-        private int totalLeft = 0;
+        [SerializeField] int totalLeft = 0;
         bool wave2Started, wave3Started, end;
         SpawnSystem spawnSystem;
-        private int killcounter;
+        //private int killcounter;
 
         private void Start()
         {
-            killcounter =0;
+            //killcounter =0;
 
             totalLeft = wave1Length + wave2Length + wave3Length;
             //print(totalLeft.ToString());

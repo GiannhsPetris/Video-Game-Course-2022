@@ -12,6 +12,7 @@ namespace Course.Combat
         WeightedRandomizer weightedRandomizer;
 
         [SerializeField] private List<Transform> spawnPointList = new List<Transform>() { };
+        [SerializeField] float seconds = 4f;
 
 
         int currentAlive;
@@ -21,14 +22,14 @@ namespace Course.Combat
         public void SpawnStart(int maxEnemies, List<WeightedValue> weightedValues)
         {
             weightedRandomizer = GetComponent<WeightedRandomizer>();
-            StartCoroutine(Spawn(maxEnemies, weightedValues));
+            StartCoroutine(Spawn(maxEnemies, weightedValues, seconds));
         }
 
-        private IEnumerator Spawn(int maxEnemies, List<WeightedValue> weightedValues)
+        private IEnumerator Spawn(int maxEnemies, List<WeightedValue> weightedValues, float seconds)
         {
             spawnCounter = 0;
 
-            WaitForSeconds wait = new WaitForSeconds(3.5f);
+            WaitForSeconds wait = new WaitForSeconds(seconds);
 
             while (spawnCounter < maxEnemies)
             {

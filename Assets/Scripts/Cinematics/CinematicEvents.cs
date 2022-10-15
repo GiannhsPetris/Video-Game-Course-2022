@@ -15,7 +15,6 @@ namespace Course.Cinematics
 
         int index = 0;
 
-        [SerializeField] WaveSystem waveSystem ;
 
 
         public void EnableCanvas()
@@ -32,9 +31,15 @@ namespace Course.Cinematics
 
         public void ShowNextText()
         {
+            print(index);
             if (index > dialogues.Length) return;
             textField.text = dialogues[index];
             index ++;
+        }
+
+        public void ResetIndex()
+        {
+            index = 0;
         }
 
         public void Quit()
@@ -42,23 +47,6 @@ namespace Course.Cinematics
             SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
             if (savingWrapper != null) print("good");
             savingWrapper.LoadMenu();
-        }
-
-        // public void FirstWaveEvent()
-        // {
-        //     waveSystem.FirstWave();
-        // }
-
-        // public void SecondWaveEvent()
-        // {
-        //    waveSystem.SecondWave();
-        // }
-
-        // public void FinalwaveEvent()
-        // {
-        //     waveSystem.Finalwave();
-        // }
-
-        
+        } 
     }
 }

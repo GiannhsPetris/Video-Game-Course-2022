@@ -105,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2269551575808982849, guid: 76a20ec0e88eb3c4a933a0287e434e9f, type: 3}
       propertyPath: startingLevel
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5367471093813156346, guid: 76a20ec0e88eb3c4a933a0287e434e9f, type: 3}
       propertyPath: m_Avatar

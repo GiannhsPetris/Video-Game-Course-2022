@@ -63,7 +63,8 @@ namespace Course.SceneManagement
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
 
-            savingWrapper.Save();
+            if (sceneToLoad != 3) savingWrapper.Save();
+            
             print("save2");
 
             yield return new WaitForSeconds(fadeWaitTime);

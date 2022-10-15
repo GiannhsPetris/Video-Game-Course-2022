@@ -38,7 +38,7 @@ namespace Course.Control
         private IEnumerator RespawnRoutine()
         {
             SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
-            savingWrapper.Save();
+            //savingWrapper.Save();
 
             yield return new WaitForSeconds(respawnDelay);
 
@@ -48,7 +48,7 @@ namespace Course.Control
             RespawnPlayer();
             ResetEnemies();
 
-            savingWrapper.Save(); 
+            //savingWrapper.Save(); 
             yield return fader.FadeIn(fadeTime);
         }
 
