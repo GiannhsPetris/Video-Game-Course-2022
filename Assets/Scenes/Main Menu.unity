@@ -25331,6 +25331,28 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.85839844
       objectReference: {fileID: 0}
+    - target: {fileID: 8012968313071347449, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_text
+      value: "This game is a group project for the Video game development course.
+        The team consists of three members: John Petris, George Samaras and Petros
+        Fatouros. \n\nIn this Rpg game you play as an adventurer sent by the king
+        to retrieve a lost weapons shipment. It is believed that the goblins which
+        are pillaging the villages have something to do with it. \n\nLevel up as
+        you kill enemies with various different weapons found around the levels and
+        defeat the evil goblins."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8012968313071347449, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_fontSize
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8012968313071347449, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8012968313071347449, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 8279523106720211556, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -25402,6 +25424,18 @@ PrefabInstance:
     - target: {fileID: 8387177493708492420, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8426713770007288890, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_fontSize
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8426713770007288890, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8426713770007288890, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8748379102542682978, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
       propertyPath: m_AnchorMax.y
