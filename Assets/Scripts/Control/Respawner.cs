@@ -2,12 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
-using Course.Attributes;
-using Course.SceneManagement;
+using GoblinHeist.Attributes;
+using GoblinHeist.SceneManagement;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Course.Control
+namespace GoblinHeist.Control
 {
     public class Respawner : MonoBehaviour
     {

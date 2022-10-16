@@ -1092,7 +1092,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &34711737 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3636785585861616333, guid: ee29a45def395fb4c9a6a024465102d6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1076769263634309508, guid: ee29a45def395fb4c9a6a024465102d6, type: 3}
   m_PrefabInstance: {fileID: 34711729}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &38246075
@@ -13354,7 +13354,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.372
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -13401,12 +13401,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100963943}
-  m_LocalRotation: {x: -0, y: 0.019581094, z: -0, w: 0.9998083}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.17226315, y: 0.081440404, z: -0.015601206, w: 0.9815546}
+  m_LocalPosition: {x: -0.0030562878, y: -1.118794, z: 10.405447}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 34711737}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1117247819
 PrefabInstance:

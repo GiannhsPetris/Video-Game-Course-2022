@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Course.Core;
-using Course.Attributes;
+using GoblinHeist.Core;
+using GoblinHeist.Attributes;
 using UnityEngine.Events;
 
-namespace Course.Combat
+namespace GoblinHeist.Combat
 {
     public class Projectile : MonoBehaviour
     {

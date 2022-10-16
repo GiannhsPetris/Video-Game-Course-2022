@@ -1,4 +1,4 @@
-namespace Course.Stats
+namespace GoblinHeist.Stats
 {
     public enum CharacterClass
     {

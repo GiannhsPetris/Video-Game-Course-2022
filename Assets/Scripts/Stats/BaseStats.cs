@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using GameDevTV.Utils;
 using UnityEngine;
 
-namespace Course.Stats
+namespace GoblinHeist.Stats
 {
     public class BaseStats : MonoBehaviour
     {

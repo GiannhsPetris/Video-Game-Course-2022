@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Course.Movement;
-using Course.Combat;
+using GoblinHeist.Movement;
+using GoblinHeist.Combat;
 using System;
-using Course.Attributes;
+using GoblinHeist.Attributes;
 using UnityEngine.EventSystems;
 using UnityEngine.AI;
 
-namespace Course.Control
+namespace GoblinHeist.Control
 {
     public class PlayerController : MonoBehaviour
     {

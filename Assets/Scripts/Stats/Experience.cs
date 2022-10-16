@@ -1,8 +1,8 @@
 using UnityEngine;
-using Course.Saving;
+using GoblinHeist.Saving;
 using System;
 
-namespace Course.Stats
+namespace GoblinHeist.Stats
 {
     public class Experience : MonoBehaviour, ISaveable
     {

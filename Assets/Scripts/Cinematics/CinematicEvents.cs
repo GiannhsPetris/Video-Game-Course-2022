@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Course.Combat;
-using Course.SceneManagement;
+using GoblinHeist.Combat;
+using GoblinHeist.SceneManagement;
 
-namespace Course.Cinematics
+namespace GoblinHeist.Cinematics
 {
     public class CinematicEvents : MonoBehaviour
     {

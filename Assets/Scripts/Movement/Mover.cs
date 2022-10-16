@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using Course.Attributes;
-using Course.Core;
-using Course.Saving;
+using GoblinHeist.Attributes;
+using GoblinHeist.Core;
+using GoblinHeist.Saving;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Course.Movement
+namespace GoblinHeist.Movement
 {
     public class Mover : MonoBehaviour, IAction, ISaveable
     {

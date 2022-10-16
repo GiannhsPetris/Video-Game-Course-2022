@@ -1,14 +1,14 @@
 using UnityEngine;
-using Course.Movement;
-using Course.Core;
-using Course.Saving;
-using Course.Attributes;
-using Course.Stats;
+using GoblinHeist.Movement;
+using GoblinHeist.Core;
+using GoblinHeist.Saving;
+using GoblinHeist.Attributes;
+using GoblinHeist.Stats;
 using System.Collections.Generic;
 using GameDevTV.Utils;
 using System;
 
-namespace Course.Combat
+namespace GoblinHeist.Combat
 {
 public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
     {

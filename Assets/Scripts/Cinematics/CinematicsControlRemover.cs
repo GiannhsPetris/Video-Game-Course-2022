@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.Playables;
-using Course.Core;
-using Course.Control;
-using Course.SceneManagement;
+using GoblinHeist.Core;
+using GoblinHeist.Control;
+using GoblinHeist.SceneManagement;
 
-namespace Course.Cinematics
+namespace GoblinHeist.Cinematics
 {
     public class CinematicsControlRemover : MonoBehaviour
     {

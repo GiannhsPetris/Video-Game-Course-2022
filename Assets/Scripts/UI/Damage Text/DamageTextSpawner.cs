@@ -1,4 +1,4 @@
-namespace Course.UI.DamageText
+namespace GoblinHeist.UI.DamageText
 {
     using System.Collections;
     using System.Collections.Generic;

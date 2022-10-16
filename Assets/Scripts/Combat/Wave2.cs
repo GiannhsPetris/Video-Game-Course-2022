@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Course.Combat
+namespace GoblinHeist.Combat
 {
     public class Wave2 : MonoBehaviour
     {

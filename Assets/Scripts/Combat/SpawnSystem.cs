@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Course.WeightedRandom;
-using Course.Attributes;
+using GoblinHeist.WeightedRandom;
+using GoblinHeist.Attributes;
 
-namespace Course.Combat
+namespace GoblinHeist.Combat
 {
     public class SpawnSystem : MonoBehaviour
     {

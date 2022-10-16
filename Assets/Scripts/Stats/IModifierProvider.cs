@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Course.Stats
+namespace GoblinHeist.Stats
 {
     interface IModifierProvider
     {

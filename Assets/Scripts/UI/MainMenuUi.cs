@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GameDevTV.Utils;
-using Course.SceneManagement;
+using GoblinHeist.SceneManagement;
 using System;
 using TMPro;
 
-namespace Course.UI
+namespace GoblinHeist.UI
 {
 
     public class MainMenuUi : MonoBehaviour

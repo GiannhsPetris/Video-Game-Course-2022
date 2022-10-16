@@ -1,4 +1,4 @@
-namespace Course.Core
+namespace GoblinHeist.Core
 {
     using System.Collections;
     using System.Collections.Generic;

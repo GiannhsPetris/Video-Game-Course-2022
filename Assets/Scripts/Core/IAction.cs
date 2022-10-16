@@ -1,4 +1,4 @@
-namespace Course.Core
+namespace GoblinHeist.Core
 {
     public interface IAction
     {

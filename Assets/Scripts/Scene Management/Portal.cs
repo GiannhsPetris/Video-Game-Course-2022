@@ -1,12 +1,12 @@
 using System;
 using System.Collections;
-using Course.Control;
-using Course.Saving;
+using GoblinHeist.Control;
+using GoblinHeist.Saving;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
-namespace Course.SceneManagement
+namespace GoblinHeist.SceneManagement
 {
     public class Portal : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Course.WeightedRandom
+namespace GoblinHeist.WeightedRandom
 {
     [Serializable]
     public class WeightedValue

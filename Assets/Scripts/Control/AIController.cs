@@ -1,15 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Course.Combat;
-using Course.Core;
-using Course.Movement;
+using GoblinHeist.Combat;
+using GoblinHeist.Core;
+using GoblinHeist.Movement;
 using UnityEngine;
-using Course.Attributes;
+using GoblinHeist.Attributes;
 using GameDevTV.Utils;
 using UnityEngine.AI;
 
-namespace Course.Control
+namespace GoblinHeist.Control
 {
     public class AIController : MonoBehaviour
     {

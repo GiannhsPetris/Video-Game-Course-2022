@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using Course.SceneManagement;
+using GoblinHeist.SceneManagement;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Course.UI
+namespace GoblinHeist.UI
 {
     public class SaveLoadUI : MonoBehaviour
     {

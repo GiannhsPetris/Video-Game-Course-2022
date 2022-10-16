@@ -1,4 +1,4 @@
-namespace Course.Saving
+namespace GoblinHeist.Saving
 {
     public interface ISaveable
     {

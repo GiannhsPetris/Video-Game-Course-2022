@@ -7,7 +7,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Course.Saving
+namespace GoblinHeist.Saving
 {
     public class SavingSystem : MonoBehaviour
     {

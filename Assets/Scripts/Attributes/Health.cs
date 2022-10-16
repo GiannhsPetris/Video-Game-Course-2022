@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Course.Saving;
-using Course.Stats;
-using Course.Core;
+using GoblinHeist.Saving;
+using GoblinHeist.Stats;
+using GoblinHeist.Core;
 using System;
 using GameDevTV.Utils;
 using UnityEngine.Events;
-using Course.Combat;
+using GoblinHeist.Combat;
 
-namespace Course.Attributes
+namespace GoblinHeist.Attributes
 {
     public class Health : MonoBehaviour, ISaveable
     {

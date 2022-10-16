@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Course.Saving
+namespace GoblinHeist.Saving
 {
     [System.Serializable]
     public class SerializableVector3

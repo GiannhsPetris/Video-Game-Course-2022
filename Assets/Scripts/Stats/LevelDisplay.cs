@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace Course.Stats
+namespace GoblinHeist.Stats
 {
     public class LevelDisplay : MonoBehaviour
     {

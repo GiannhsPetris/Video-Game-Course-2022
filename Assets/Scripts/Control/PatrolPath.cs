@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Course.Control
+namespace GoblinHeist.Control
 {
     public class PatrolPath : MonoBehaviour
     {

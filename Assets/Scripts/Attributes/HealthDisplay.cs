@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace Course.Attributes
+namespace GoblinHeist.Attributes
 {
     public class HealthDisplay : MonoBehaviour
     {

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Course.UI
+namespace GoblinHeist.UI
 {
     public class UISwitcher : MonoBehaviour
     {

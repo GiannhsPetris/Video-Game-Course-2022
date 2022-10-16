@@ -2,10 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Course.Control;
-using Course.Attributes;
+using GoblinHeist.Control;
+using GoblinHeist.Attributes;
 
-namespace Course.Combat
+namespace GoblinHeist.Combat
 {
     public class WeaponPickup : MonoBehaviour, IRaycastable
     {

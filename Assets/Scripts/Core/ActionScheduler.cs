@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Course.Core
+namespace GoblinHeist.Core
 {
     public class ActionScheduler : MonoBehaviour
     {

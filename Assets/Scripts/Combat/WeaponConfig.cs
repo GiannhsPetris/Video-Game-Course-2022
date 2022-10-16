@@ -1,9 +1,9 @@
-using Course.Attributes;
+using GoblinHeist.Attributes;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Course.Combat
+namespace GoblinHeist.Combat
 {
     [CreateAssetMenu(fileName = "Weapon", menuName = "Weapons/Make New Weapon", order = 0)]
     public class WeaponConfig : ScriptableObject

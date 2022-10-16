@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Course.WeightedRandom
+namespace GoblinHeist.WeightedRandom
 {
     public class WeightedRandomizer : MonoBehaviour
     {

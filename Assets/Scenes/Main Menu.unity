@@ -2854,11 +2854,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e064c70f9b92d014481b36570477595d, type: 3}
---- !u!4 &248535338 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4362025171937244654, guid: e064c70f9b92d014481b36570477595d, type: 3}
-  m_PrefabInstance: {fileID: 248535337}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &249207531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5048,7 +5043,8 @@ Transform:
   m_LocalRotation: {x: 0.0132117765, y: 0.44324005, z: 0.00045307077, w: -0.89630544}
   m_LocalPosition: {x: 152.08899, y: 10.343401, z: 7.043659}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 909977779}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -1.38, y: -52.634, z: 0.625}
@@ -10520,7 +10516,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 48a26d2460d0cfe438226eb7f2254836, type: 2}
   m_audioClip: {fileID: 8300000, guid: 2ecaccea9902b43418878e4c9d3ea844, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -10564,7 +10560,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.366
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -10611,12 +10607,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909977777}
-  m_LocalRotation: {x: -0, y: -0.9219165, z: 0, w: 0.3873888}
-  m_LocalPosition: {x: 131.02638, y: -10.302598, z: -151.90741}
+  m_LocalRotation: {x: -0.013211777, y: -0.44324008, z: -0.0004530708, w: -0.8963055}
+  m_LocalPosition: {x: -110.148605, y: -16.08677, z: 172.54341}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 248535338}
-  m_RootOrder: 4
+  m_Father: {fileID: 433755701}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &914561444
 PrefabInstance:
@@ -24588,8 +24584,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2181459622463008865, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -89.604
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181459622463008865, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 9.662109
+      value: 4.211914
       objectReference: {fileID: 0}
     - target: {fileID: 2435360336544781671, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
       propertyPath: m_AnchorMax.y
@@ -24746,6 +24746,40 @@ PrefabInstance:
     - target: {fileID: 4042697254932945880, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066673051682473484, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_text
+      value: 'Goblin Heist
+
+        Game Development Project'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066673051682473484, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_fontSize
+      value: 170.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066673051682473484, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_margin.x
+      value: -2.7252808
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066673051682473484, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_margin.z
+      value: -0.00012198123
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066673051682473484, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066673051682473484, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066673051682473484, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066673051682473484, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4290966883706511896, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
       propertyPath: m_IsActive
@@ -25353,6 +25387,10 @@ PrefabInstance:
       propertyPath: m_fontSizeMin
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 8067877658686192178, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+      propertyPath: m_MinValue
+      value: -50
+      objectReference: {fileID: 0}
     - target: {fileID: 8279523106720211556, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -25511,3 +25549,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+--- !u!1 &7955185788966379577 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5141607032820302584, guid: 869416895a60c114ab1f480a3aa4e096, type: 3}
+  m_PrefabInstance: {fileID: 7955185788966379576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!222 &7955185788966379578
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7955185788966379577}
+  m_CullTransparentMesh: 1

@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
-using Course.Combat;
-using Course.WeightedRandom;
+using GoblinHeist.Combat;
+using GoblinHeist.WeightedRandom;
 
-namespace Course.Combat
+namespace GoblinHeist.Combat
 {
     public class WaveSystem : MonoBehaviour
     {

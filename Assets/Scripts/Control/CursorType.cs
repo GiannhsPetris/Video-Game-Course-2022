@@ -1,4 +1,4 @@
-namespace Course.Control
+namespace GoblinHeist.Control
 {
     public enum CursorType
     {

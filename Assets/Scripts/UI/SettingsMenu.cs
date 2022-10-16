@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-namespace Course.UI
+namespace GoblinHeist.UI
 {
     public class SettingsMenu : MonoBehaviour
     {

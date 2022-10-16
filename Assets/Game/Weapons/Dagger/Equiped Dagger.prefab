@@ -175,7 +175,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2594871376068178835, guid: bc2c34eae4ccd534887b8a8f5f818934, type: 3}
+      - m_Target: {fileID: 2609120853069345456}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
         m_Mode: 1

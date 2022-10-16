@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
-using Course.Core;
+using GoblinHeist.Core;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Course.Saving
+namespace GoblinHeist.Saving
 {
     [ExecuteAlways]
     public class SaveableEntity : MonoBehaviour

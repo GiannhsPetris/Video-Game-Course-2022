@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
-using Course.Saving;
+using GoblinHeist.Saving;
 
- namespace Course.Cinematics
+ namespace GoblinHeist.Cinematics
  {
 
     public class CinematicTrigger : MonoBehaviour, ISaveable

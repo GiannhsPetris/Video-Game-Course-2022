@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Course.SceneManagement
+namespace GoblinHeist.SceneManagement
 {
     public class Fader : MonoBehaviour
     {

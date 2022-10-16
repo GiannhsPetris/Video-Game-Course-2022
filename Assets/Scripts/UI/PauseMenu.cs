@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Course.Control;
-using Course.SceneManagement;
+using GoblinHeist.Control;
+using GoblinHeist.SceneManagement;
 using UnityEngine;
 
-namespace Course.UI
+namespace GoblinHeist.UI
 {
     public class PauseMenu : MonoBehaviour
     {

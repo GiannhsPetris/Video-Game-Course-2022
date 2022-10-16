@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Course.Attributes
+namespace GoblinHeist.Attributes
 {
     public class HealthBar : MonoBehaviour
     {

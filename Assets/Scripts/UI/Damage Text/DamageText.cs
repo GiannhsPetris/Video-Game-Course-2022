@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Course.UI.DamageText
+namespace GoblinHeist.UI.DamageText
 {
     public class DamageText : MonoBehaviour
     {

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using Course.Attributes;
+using GoblinHeist.Attributes;
 
-namespace Course.Combat
+namespace GoblinHeist.Combat
 {
     public class EnemyHealthDisplay : MonoBehaviour
     {

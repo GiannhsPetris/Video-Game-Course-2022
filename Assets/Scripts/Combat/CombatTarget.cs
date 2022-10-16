@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Course.Attributes;
-using Course.Control;
+using GoblinHeist.Attributes;
+using GoblinHeist.Control;
 using UnityEngine;
 
-namespace Course.Combat
+namespace GoblinHeist.Combat
 {
     [RequireComponent(typeof(Health))]
     public class CombatTarget : MonoBehaviour, IRaycastable

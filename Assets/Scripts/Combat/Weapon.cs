@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Course.Combat
+namespace GoblinHeist.Combat
 {
     public class Weapon : MonoBehaviour
     {

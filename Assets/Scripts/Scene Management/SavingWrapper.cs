@@ -1,11 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Course.Saving;
+using GoblinHeist.Saving;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Course.SceneManagement
+namespace GoblinHeist.SceneManagement
 {
     public class SavingWrapper : MonoBehaviour
     {
