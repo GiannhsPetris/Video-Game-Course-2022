@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7b6a7fac6e2d604a8e529f6dddf65b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toggleKey: 27
+  toggleKey: 112
   uiContainer: {fileID: 263009178860583563}
 --- !u!1 &5978636037771063623
 GameObject:
